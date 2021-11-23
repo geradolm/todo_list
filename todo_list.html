@@ -40,7 +40,7 @@
     }
 
 
-    .addBtn {
+    .add-btn {
       padding: 8px;
       width: 5%;
       border: solid;
@@ -58,7 +58,7 @@
   <div id="myDIV" class="header">
     <h1>To Do List</h1>
     <input type="text" id="myInput" placeholder="New to do Item..." onkeydown="handleKeyDown(event)">
-    <span onclick="newElement()" class="addBtn">Add</span>
+    <span onclick="newElement()" class="add-btn">Add</span>
   </div>
 
   <ul id="myUL"></ul>
@@ -74,10 +74,10 @@
     }
 
     function handleKeyDown(event) {
-        let keyPressed = event.key;
-        if (keyPressed === 'Enter') {
-            newElement();
-        }
+      let keyPressed = event.key;
+      if (keyPressed === 'Enter') {
+        newElement();
+      }
     }
 
     function newElement() {
